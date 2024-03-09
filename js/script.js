@@ -17,5 +17,9 @@ function generatePassword() {
         password += allChar[Math.floor(Math.random() * allChar.length)];
     }
     input.value = password;
-    input.value = "hc";
+}
+
+function copyText() {
+    input.select();
+    document.execCommand("copy");
 }
