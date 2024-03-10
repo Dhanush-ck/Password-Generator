@@ -5,9 +5,10 @@ const lowerCase = "abcdefghijklmnopqrstuvwxyz";
 const numbers = "0123456789";
 const symbols = "!@#$%^&*()_+[]{}\|;:,.<>/?";
 const allChar = upperCase + lowerCase + numbers + symbols;
+let password;
 
 function generatePassword() {
-    let password = "";
+    password = "";
     password += upperCase[Math.floor(Math.random() * upperCase.length)];
     password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
     password += numbers[Math.floor(Math.random() * numbers.length)];
@@ -22,4 +23,9 @@ function generatePassword() {
 function copyText() {
     input.select();
     document.execCommand("copy");
+}
+
+function reset() {
+    password = "";
+    input.value = password;
 }
