@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Truculenta", sans-serif;
+}
+
+body {
+    background: #2f1e2f;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 150px ;
+}
+
+.container .randomPassword {
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.container .generator {
+    color: #ffffff;
+    font-size: 60px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.container .input {
+    display: flex;
+    padding: 20px 0 10px;
+}
+
+.container input {
+    height: 4.5vh;
+    width: 250px;
+    font-size: 15px;
+    padding: 0 0 0 10px;
+    border-radius: 10px 30px 30px 10px;
+}
+
+.container #copy {
+    border: none;
+    background-color: transparent;
+    padding: 0 0 0 10px;
+}
+
+.container #generate {
+    height: 32px;
+    width: 100px;
+    background-color: #ffffff;
+    border-radius: 10px 30px 30px 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10px;
+}
+
+.container .buttons {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.container #reset {
+    height: 32px;
+    width: 100px;
+    background-color: #ffffff;
+    border-radius: 10px 30px 30px 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 0 0 0 70px;
+    }
+
+    .container #generate {
+        height: 40px;
+    }
+
+    .container #reset {
+        height: 40px;
+    }
+}
